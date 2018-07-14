@@ -1,0 +1,22 @@
+{
+  "name": "mitm",
+  "version": "0.0.0",
+  "description": "Wordpress theme for Music in the Morning",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kerrywall/mitm.git"
+  },
+  "author": "Kerry Wall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kerrywall/mitm/issues"
+  },
+  "homepage": "https://github.com/kerrywall/mitm",
+  "devDependencies": {
+    "gulp-sass": "^2.2.0"
+  }
+}
