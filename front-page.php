@@ -53,6 +53,36 @@ get_header();
 		?>
 
 		</main><!-- #main -->
+		<section id="events" class="site-events">
+			<div class="content">
+				<h2>Upcoming Events</h2>
+				<h3>Nam euismod sapien velit, id pretium odio ullamcorper non. </h3>
+				<div class="event">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/radek-grzybowski-74331-unsplash.jpg" alt="An image of a concert hall">
+					<div class="description">
+						<h4>Music in the Morning</h4>
+						<p>January 4, 2019</p>
+					</div>
+				</div>
+				<div class="event">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/radek-grzybowski-74331-unsplash.jpg" alt="An image of a concert hall">
+					<div class="description">
+						<h4>Music in the Morning</h4>
+						<p>January 4, 2019</p>
+					</div>
+				</div>
+				<div class="event">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/radek-grzybowski-74331-unsplash.jpg" alt="An image of a concert hall">
+					<div class="description">
+						<h4>Music in the Morning</h4>
+						<p>January 4, 2019</p>
+					</div>
+				</div><!--events-->
+				<p>
+					<a class="view-all" href="#">View all Events</a>
+				</p>
+			</div>
+		</section>
 	</div><!-- #primary -->
 
 <?php

@@ -1,5 +1,5 @@
 .home .site-header {
-	@include min-screen(640px) {
+	@include min-screen(768px) {
 		position: absolute;
 		top: 0;
 		width: 100%;
@@ -8,7 +8,7 @@
 }
 
 .logged-in .site-header {
-	@include min-screen(640px) {
+	@include min-screen(768px) {
 		top: 32px;
 	}
 }
@@ -23,7 +23,7 @@
 }
 
 .site-main {
-	@include min-screen(640px) {
+	@include min-screen(768px) {
 		margin-top: 50px;
 	}
 	@include wrapper();
@@ -31,7 +31,7 @@
 
 .main-navigation {
 	@include column(12);
-	@include min-screen(640px) {
+	@include min-screen(768px) {
 		@include column(5);	
 	}
 	ul {
@@ -48,6 +48,7 @@
 	}
 	a {
 		text-decoration: none;
+		color: $color__text-dark;
 		&:active, &:hover {
 			text-decoration: underline;
 		}

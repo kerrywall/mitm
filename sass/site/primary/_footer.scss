@@ -1,2 +1,66 @@
 footer {
+	margin-top: 50px;
+	background-color: $dark-bg;
+	color: $color__text-main;
+	a {
+		color: $color__text-main;
+		text-decoration: none;
+		border-bottom: 1px dotted $color__text-main;
+	}
+	.site-info {
+		padding: 25px 0;
+		@include min-screen(768px) {
+			padding: 50px 0;
+			@include wrapper();
+		}
+	}
+	.about, .news, .contact, .donate {
+		@include column(12);
+		@include min-screen(768px) {
+			@include column(3);
+		}
+	}
+	.about p {
+		@include min-screen(768px) {
+			padding-right: 10px;
+		}
+	}
+	.donate a {
+		padding: 10px 20px;
+		border-radius: 3px;
+		color: #fff;
+		background-color: $color__accent;
+		@include font-size(0.9);
+		text-transform: uppercase;
+		text-align: right;
+		transition: 0.25s all ease;
+		border-bottom: none;
+		&:hover, &:focus {
+			background-color: darken($color__accent, 10%);
+			text-decoration: underline;
+		}
+	}
+	h2 {
+		margin-top: 0;
+		@include font-size(1);
+		color: #fff;
+	}
+	p, li {
+		@include font-size(0.8);
+	}
+	ul {
+		padding: 0;
+	}
+	li {
+		list-style-type: none;
+		margin: 0;
+	}
+	.title {
+		font-weight: bold;
+		font-style: italic;
+		display: block;
+	}
+	.date {
+		text-transform: uppercase;
+	}
 }
