@@ -1,0 +1,33 @@
+.home {
+	article {
+		@include min-screen(640px) {
+			padding: 0;
+		}
+	}
+	.entry-title {
+		@include column(12);
+		@include min-screen(640px) {
+		}
+	}
+	.entry-content {
+		@include column(12);
+		@include min-screen(640px) {
+			@include column(7);
+		}
+		p {
+			@include min-screen(640px) {
+				margin-top: 0;
+			}
+		}
+	}
+	.post-thumbnail {
+		@include column(12);
+		@include min-screen(640px) {
+			@include column(5);
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}

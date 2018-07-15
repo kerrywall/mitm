@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -26,33 +26,21 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
+			<div class="site-title">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/img/MITMHeaderLogoAlt.png"></a>
+			</div>
+			<nav id="site-navigation" class="main-navigation">
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				) );
+				?>
+			</nav><!-- #site-navigation -->
 			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$musicinthemorning_description = get_bloginfo( 'description', 'display' );
-			if ( $musicinthemorning_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $musicinthemorning_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+			$musicinthemorning_description = get_bloginfo( 'description', 'display' ); ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'musicinthemorning' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

@@ -16,12 +16,15 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
+		<?php if ( is_front_page() ) : ?>
+			<img class="hero" src="<?php echo get_template_directory_uri() ?>/img/larisa-birta-102093-unsplash.jpg" alt="">
+		<?php endif; ?>
 		<main id="main" class="site-main">
 
 		<?php
 		if ( have_posts() ) :
 
-			if ( is_home() && ! is_front_page() ) :
+			if ( is_front_page() ) :
 				?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
@@ -42,8 +45,6 @@ get_header();
 
 			endwhile;
 
-			the_posts_navigation();
-
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );
@@ -55,5 +56,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

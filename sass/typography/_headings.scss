@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: $font__headers;
+}
+
+h1, h2, p.site-title {
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.site-title {
+	@include column(12);
+	@include min-screen(640px) {
+		@include column(3);
+	}
+}
+
+h1.entry-title {
+	@include font-size(1.5);
+	@include min-screen(640px) {
+		@include font-size(2);
+	}
+}
+
+h2 {
+	@include font-size(2);
+}
