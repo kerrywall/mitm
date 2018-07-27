@@ -554,11 +554,12 @@ p {
         margin-left: 83.33333%; } }
 
 @media only screen and (min-width: 768px) {
-  .home .site-header {
+  .site-header {
     position: absolute;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.85); } }
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: 2; } }
 
 @media only screen and (min-width: 768px) {
   .logged-in .site-header {
@@ -610,7 +611,8 @@ p {
       text-decoration: underline; }
 
 .hero {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 footer {
   margin-top: 50px;
@@ -676,6 +678,98 @@ footer {
     display: block; }
   footer .date {
     text-transform: uppercase; }
+
+.single-concert .entry-header h1 {
+  text-transform: none;
+  margin-bottom: 0; }
+
+.single-concert .entry-header.no-hero {
+  max-width: 1170px;
+  margin: 0 auto; }
+  @media only screen and (min-width: 768px) {
+    .single-concert .entry-header.no-hero {
+      margin-top: 150px; } }
+  .single-concert .entry-header.no-hero h1, .single-concert .entry-header.no-hero p {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%; }
+
+.single-concert .entry-header.hero {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%; }
+  @media only screen and (min-width: 768px) {
+    .single-concert .entry-header.hero {
+      max-width: 1170px;
+      width: 100%;
+      margin: 0 auto; } }
+
+.single-concert .date {
+  margin-top: 0; }
+
+@media only screen and (min-width: 768px) {
+  .single-concert .hero-image {
+    height: calc(100vh);
+    overflow: hidden; } }
+
+@media only screen and (min-width: 768px) {
+  .single-concert .embedded-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: flex-end;
+    z-index: 1; } }
+
+@media only screen and (min-width: 768px) {
+  .single-concert.logged-in .embedded-text {
+    top: 32px; } }
+
+.single-concert article {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.single-concert .entry-content {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%; }
+  @media only screen and (min-width: 768px) {
+    .single-concert .entry-content {
+      display: inline-block;
+      float: left;
+      width: 66.66667%;
+      padding-left: 1.04167%;
+      padding-right: 1.04167%; } }
+
+.single-concert .entry-sidebar {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%; }
+  @media only screen and (min-width: 768px) {
+    .single-concert .entry-sidebar {
+      display: inline-block;
+      float: left;
+      width: 33.33333%;
+      padding-left: 1.04167%;
+      padding-right: 1.04167%; } }
+
+.single-concert h2 {
+  font-size: 22.4px;
+  font-size: 1.4rem;
+  margin: 0; }
 
 footer {
   margin-top: 50px;

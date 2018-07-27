@@ -1,0 +1,71 @@
+.single-concert {
+	.entry-header h1 {
+		text-transform: none;
+		margin-bottom: 0;
+	}
+	.entry-header.no-hero {
+		@include wrapper();
+		@include min-screen(768px) {
+			margin-top: 150px;
+		}
+		h1, p {
+			@include column(12);
+		}
+	}
+	.entry-header.hero {
+		@include column(12);
+		@include min-screen(768px) {
+			max-width: 1170px;
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+	.date {
+		margin-top: 0;
+	}
+	.hero-image {
+		@include min-screen(768px) {
+			height: calc(100vh);
+			overflow: hidden;
+		}
+	}
+	.embedded-text {
+		@include min-screen(768px) {
+			position: absolute;
+			    top: 0;
+			    left: 0;
+			    color: #fff;
+			    width: 100%;
+			    height: 100%;
+			    padding: 20px;
+			    background: rgba(0, 0, 0, 0.5);
+			    display: flex;
+			    align-items: flex-end;
+			    z-index: 1;
+		}
+	}
+	&.logged-in .embedded-text {
+		@include min-screen(768px) {
+			top: 32px;
+		}
+	}
+	article {
+		@include wrapper();
+	}
+	.entry-content {
+		@include column(12)
+		@include min-screen(768px) {
+			@include column(8);
+		}
+	}
+	.entry-sidebar {
+		@include column(12);
+		@include min-screen(768px) {
+			@include column(4);
+		}
+	}
+	h2 {
+		@include font-size(1.4);
+		margin: 0;
+	}
+}

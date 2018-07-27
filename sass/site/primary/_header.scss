@@ -1,9 +1,10 @@
-.home .site-header {
+.site-header {
 	@include min-screen(768px) {
 		position: absolute;
 		top: 0;
 		width: 100%;
 		background-color: rgba(255, 255, 255, 0.85);
+		z-index: 2;
 	}
 }
 
@@ -57,4 +58,5 @@
 
 .hero {
 	max-width: 100%;
+	height: auto;
 }
