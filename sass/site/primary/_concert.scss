@@ -56,7 +56,16 @@
 		@include column(12)
 		@include min-screen(768px) {
 			@include column(8);
+			p {
+				@include min-screen(768px) {
+					margin-top: 0;
+				}
+			}
 		}
+	}
+	.entry-content img {
+		width: 100%;
+		height: auto;
 	}
 	.entry-sidebar {
 		@include column(12);
@@ -67,5 +76,6 @@
 	h2 {
 		@include font-size(1.4);
 		margin: 0;
+		text-transform: none;
 	}
 }

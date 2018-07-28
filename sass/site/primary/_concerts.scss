@@ -1,0 +1,19 @@
+.concerts {
+	.entry-header {
+		@include column(12);
+		@include min-screen(768px) {
+			margin-top: 50px;
+			text-align: center;
+		}
+	}
+	.site-events {
+		@include min-screen(768px) {
+			@include column(9);
+		}
+	}
+	.sidebar {
+		@include min-screen(768px) {
+			@include column(3);
+		}
+	}
+}
