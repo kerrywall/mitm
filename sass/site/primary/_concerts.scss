@@ -15,5 +15,8 @@
 		@include min-screen(768px) {
 			@include column(3);
 		}
+		iframe {
+			max-width: 100%;
+		}
 	}
 }

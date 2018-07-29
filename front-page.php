@@ -53,36 +53,48 @@ get_header();
 		?>
 
 		</main><!-- #main -->
-		<section id="events" class="site-events">
-			<div class="content">
-				<h2>Upcoming Events</h2>
-				<h3>Nam euismod sapien velit, id pretium odio ullamcorper non. </h3>
-				<div class="event">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/radek-grzybowski-74331-unsplash.jpg" alt="An image of a concert hall">
-					<div class="description">
-						<h4>Music in the Morning</h4>
-						<p>January 4, 2019</p>
-					</div>
-				</div>
-				<div class="event">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/radek-grzybowski-74331-unsplash.jpg" alt="An image of a concert hall">
-					<div class="description">
-						<h4>Music in the Morning</h4>
-						<p>January 4, 2019</p>
-					</div>
-				</div>
-				<div class="event">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/radek-grzybowski-74331-unsplash.jpg" alt="An image of a concert hall">
-					<div class="description">
-						<h4>Music in the Morning</h4>
-						<p>January 4, 2019</p>
-					</div>
-				</div><!--events-->
-				<p>
-					<a class="view-all" href="#">View all Events</a>
-				</p>
-			</div>
-		</section>
+		<?php
+
+		$args = array(
+			'post_type' => array( 'concert' ), 'post_count' =>3
+		);
+
+		// The Query
+		$the_query = new WP_Query( $args );
+
+		// The Loop
+		if ( $the_query->have_posts() ) {
+
+			echo '<section id="events" class="site-events">
+				<div class="content">
+					<h2>Upcoming Events</h2>
+					<h3>Nam euismod sapien velit, id pretium odio ullamcorper non. </h3>';
+			while ( $the_query->have_posts() ) {
+
+				$the_query->the_post();
+				if (has_post_thumbnail()) {
+					$thumbnail = get_the_post_thumbnail_url($large);
+				} else {
+					$thumbnail = get_template_directory_uri() . '/img/radek-grzybowski-74331-unsplash.jpg';
+				}
+				echo '<div class="event">
+						<a href="'.get_permalink().'">
+						<img src="'.$thumbnail.'" alt="">
+						<div class="description">
+							<h4>'.get_the_title().'</h4>
+							<p>'.get_field('date').'</p>
+						</div>
+						</a>
+					</div>';
+			}
+			echo '<p>
+					<a class="view-all" href="concerts">View all Events</a>
+				</p></div></section>';
+			/* Restore original Post Data */
+			wp_reset_postdata();
+		} else {
+			// no posts found
+		} ?>
 	</div><!-- #primary -->
 
 <?php

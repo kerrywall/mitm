@@ -15,7 +15,32 @@
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<section class="sidebar">
-			&nbsp;
+			<?php get_search_form(); ?>
+			<h3>Locations</h3>
+			<?php 
+			// The Query
+
+			$args = array(
+				'post_type' => array( 'location' )
+			);
+
+			$locations = new WP_Query( $args );
+
+			// The Loop
+			if ( $locations->have_posts() ) {
+				echo '<div class="location">';
+				while ( $locations->have_posts() ) {
+					$locations->the_post();
+					echo '<h4>' . get_the_title() . '</h4>';
+					echo get_field('map');
+				}
+				echo '</div>';
+				/* Restore original Post Data */
+				wp_reset_postdata();
+			} else {
+				// no posts found
+			}
+			?>
 		</section>
 		
 			<div class="content">
@@ -33,9 +58,14 @@
 					echo '<section id="events" class="site-events">';
 					while ( $the_query->have_posts() ) {
 						$the_query->the_post();
+						if (has_post_thumbnail()) {
+							$thumbnail = get_the_post_thumbnail_url($large);
+						} else {
+							$thumbnail = get_template_directory_uri() . '/img/radek-grzybowski-74331-unsplash.jpg';
+						}
 						echo '<div class="event">
 								<a href="'.get_permalink().'">
-								<img src="' . get_template_directory_uri() . '/img/radek-grzybowski-74331-unsplash.jpg" alt="An image of a concert hall">
+								<img src="'.$thumbnail.'" alt="">
 								<div class="description">
 									<h4>'.get_the_title().'</h4>
 									<p>'.get_field('date').'</p>

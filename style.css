@@ -532,7 +532,8 @@ p {
       margin-bottom: 50px; } }
 
 .site-events img {
-  z-index: -1; }
+  z-index: -1;
+  height: auto; }
 
 .site-events .description {
   background-color: #fff;
@@ -563,6 +564,12 @@ p {
       padding-left: 1.04167%;
       padding-right: 1.04167%;
       margin-left: 83.33333%; } }
+
+.site-events a {
+  color: #000;
+  text-decoration: none; }
+  .site-events a:hover h4 {
+    text-decoration: underline; }
 
 @media only screen and (min-width: 768px) {
   .site-header {
@@ -817,6 +824,9 @@ footer {
     padding-left: 1.04167%;
     padding-right: 1.04167%; } }
 
+.concerts .sidebar iframe {
+  max-width: 100%; }
+
 footer {
   margin-top: 50px;
   background-color: #252525;
@@ -940,7 +950,8 @@ footer {
       margin-bottom: 50px; } }
 
 .site-events img {
-  z-index: -1; }
+  z-index: -1;
+  height: auto; }
 
 .site-events .description {
   background-color: #fff;
@@ -971,6 +982,12 @@ footer {
       padding-left: 1.04167%;
       padding-right: 1.04167%;
       margin-left: 83.33333%; } }
+
+.site-events a {
+  color: #000;
+  text-decoration: none; }
+  .site-events a:hover h4 {
+    text-decoration: underline; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
