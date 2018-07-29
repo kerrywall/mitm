@@ -1,28 +1,28 @@
 .home {
 	article {
-		@include min-screen(640px) {
+		@include min-screen(1024px) {
 			padding: 0;
 		}
 	}
 	.entry-title {
 		@include column(12);
-		@include min-screen(640px) {
+		@include min-screen(1024px) {
 		}
 	}
 	.entry-content {
 		@include column(12);
-		@include min-screen(640px) {
+		@include min-screen(1024px) {
 			@include column(7);
 		}
 		p {
-			@include min-screen(640px) {
+			@include min-screen(1024px) {
 				margin-top: 0;
 			}
 		}
 	}
 	.post-thumbnail {
 		@include column(12);
-		@include min-screen(640px) {
+		@include min-screen(1024px) {
 			@include column(5);
 		}
 		img {
@@ -36,7 +36,7 @@
 		}
 		background: $color__background-light;
 		padding: 50px 0;
-		@include min-screen(768px) {
+		@include min-screen(1024px) {
 			margin-top: 75px;
 		}
 	}

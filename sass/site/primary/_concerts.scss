@@ -1,22 +1,32 @@
 .concerts {
 	.entry-header {
 		@include column(12);
-		@include min-screen(768px) {
-			margin-top: 50px;
+		@include min-screen(1024px) {
+			margin-top: 60px;
 			text-align: center;
 		}
 	}
 	.site-events {
-		@include min-screen(768px) {
+		@include min-screen(1024px) {
 			@include column(9);
 		}
 	}
 	.sidebar {
-		@include min-screen(768px) {
+		@include column(12);
+		@include min-screen(1024px) {
 			@include column(3);
 		}
 		iframe {
 			max-width: 100%;
+		}
+		input, -webkit-input {
+			border-radius: 0;
+		    border: 1px solid black;
+		    padding: 5px;
+		    transition: 0.25s all ease;
+		}
+		input.search-submit:hover, -webkit-input.search-submit:hover {
+			background: #EAEFF2;
 		}
 	}
 }

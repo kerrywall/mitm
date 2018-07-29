@@ -1,1 +1,28 @@
 @import 'home';
+
+.type-page {
+	.entry-header {
+		@include min-screen(1024px) {
+			margin-top: 150px;
+		}
+	}
+}
+
+.search-results {
+	.page-header {
+		@include min-screen(1024px) {
+			margin-top: 150px;
+		}	
+	}
+	h2 {
+		text-transform: none;
+		@include font-size(1.75);
+	}
+	.content-area {
+		@include column(12);
+	}
+}
+
+.entry-content {
+	@include column(12);
+}

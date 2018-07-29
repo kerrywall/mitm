@@ -5,7 +5,7 @@
 	}
 	.entry-header.no-hero {
 		@include wrapper();
-		@include min-screen(768px) {
+		@include min-screen(1024px) {
 			margin-top: 150px;
 		}
 		h1, p {
@@ -14,7 +14,7 @@
 	}
 	.entry-header.hero {
 		@include column(12);
-		@include min-screen(768px) {
+		@include min-screen(1024px) {
 			max-width: 1170px;
 			width: 100%;
 			margin: 0 auto;
@@ -24,13 +24,13 @@
 		margin-top: 0;
 	}
 	.hero-image {
-		@include min-screen(768px) {
+		@include min-screen(1024px) {
 			height: calc(100vh);
 			overflow: hidden;
 		}
 	}
 	.embedded-text {
-		@include min-screen(768px) {
+		@include min-screen(1024px) {
 			position: absolute;
 			    top: 0;
 			    left: 0;
@@ -45,7 +45,7 @@
 		}
 	}
 	&.logged-in .embedded-text {
-		@include min-screen(768px) {
+		@include min-screen(1024px) {
 			top: 32px;
 		}
 	}
@@ -54,10 +54,10 @@
 	}
 	.entry-content {
 		@include column(12)
-		@include min-screen(768px) {
+		@include min-screen(1024px) {
 			@include column(8);
 			p {
-				@include min-screen(768px) {
+				@include min-screen(1024px) {
 					margin-top: 0;
 				}
 			}
@@ -69,7 +69,7 @@
 	}
 	.entry-sidebar {
 		@include column(12);
-		@include min-screen(768px) {
+		@include min-screen(1024px) {
 			@include column(4);
 		}
 	}

@@ -13,8 +13,8 @@
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-	<div class="entry-content">
-		<section class="sidebar">
+	<section class="entry-content">
+		<aside class="sidebar">
 			<?php get_search_form(); ?>
 			<h3>Locations</h3>
 			<?php 
@@ -41,7 +41,7 @@
 				// no posts found
 			}
 			?>
-		</section>
+		</aside>
 		
 			<div class="content">
 				<?php
@@ -80,6 +80,6 @@
 					// no posts found
 				} ?>
 			
-	</div><!-- .entry-content -->
+	</section><!-- .entry-content -->
 
 </article><!-- #post-<?php the_ID(); ?> -->

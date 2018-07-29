@@ -9,19 +9,19 @@ footer {
 	}
 	.site-info {
 		padding: 25px 0;
-		@include min-screen(768px) {
+		@include min-screen(1024px) {
 			padding: 50px 0;
 			@include wrapper();
 		}
 	}
 	.about, .news, .contact, .donate {
 		@include column(12);
-		@include min-screen(768px) {
+		@include min-screen(1024px) {
 			@include column(3);
 		}
 	}
 	.about p {
-		@include min-screen(768px) {
+		@include min-screen(1024px) {
 			padding-right: 10px;
 		}
 	}

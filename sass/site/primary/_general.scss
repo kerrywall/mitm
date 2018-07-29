@@ -1,5 +1,5 @@
 .site-events {
-	@include min-screen(768px) {
+	@include min-screen(1024px) {
 		position: relative;
 		height: 400px;
 	}
@@ -15,7 +15,7 @@
 		font-family: Raleway, sans-serif;
 		letter-spacing: 2px;
 		color: $color__text-dark;
-		@include min-screen(768px) {
+		@include min-screen(1024px) {
 			margin-bottom: 50px;
 		}
 	}
@@ -31,7 +31,7 @@
 		position: relative;
 		@include column(12);
 		margin-bottom: 25px;
-		@include min-screen(768px) {
+		@include min-screen(1024px) {
 			@include column(4);
 			margin-bottom: 50px;
 		}
@@ -64,7 +64,7 @@
 		&:hover, &:focus {
 			text-decoration: underline;
 		} 
-		@include min-screen(768px) {
+		@include min-screen(1024px) {
 			@include column(2);
 			@include push(10);
 		}
@@ -76,4 +76,8 @@
 			text-decoration: underline;
 		}
 	}
+}
+
+a {
+	color: #000;
 }

@@ -1,5 +1,5 @@
 .site-header {
-	@include min-screen(768px) {
+	@include min-screen(1024px) {
 		position: absolute;
 		top: 0;
 		width: 100%;
@@ -9,7 +9,7 @@
 }
 
 .logged-in .site-header {
-	@include min-screen(768px) {
+	@include min-screen(1024px) {
 		top: 32px;
 	}
 }
@@ -24,7 +24,7 @@
 }
 
 .site-main {
-	@include min-screen(768px) {
+	@include min-screen(1024px) {
 		margin-top: 50px;
 	}
 	@include wrapper();
@@ -32,19 +32,21 @@
 
 .main-navigation {
 	@include column(12);
-	@include min-screen(768px) {
+	@include min-screen(1024px) {
 		@include column(5);	
 	}
 	ul {
 		display: inline-flex;
 		align-items: center;
+		padding: 0;
 	}
 	li {
 		@include font-size(0.9);
 		text-transform: uppercase;
 		list-style-type: none;
+		margin: 0 20px;
 		&.current_page_item a {
-			font-weight: bold;
+			border-bottom: 1px #000 dotted;
 		}
 	}
 	a {
