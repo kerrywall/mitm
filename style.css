@@ -556,7 +556,7 @@ p {
       width: 33.33333%;
       padding-left: 1.04167%;
       padding-right: 1.04167%;
-      margin-bottom: 50px; } }
+      margin-bottom: 0; } }
 
 .site-events img {
   z-index: -1;
@@ -580,7 +580,8 @@ p {
   border-radius: 3px;
   padding: 5px;
   text-decoration: none;
-  text-align: center; }
+  text-align: center;
+  margin-top: 25px; }
   .site-events .view-all:hover, .site-events .view-all:focus {
     text-decoration: underline; }
   @media only screen and (min-width: 1024px) {
@@ -590,7 +591,8 @@ p {
       width: 16.66667%;
       padding-left: 1.04167%;
       padding-right: 1.04167%;
-      margin-left: 83.33333%; } }
+      margin-left: 83.33333%;
+      margin-top: 50px; } }
 
 .site-events a {
   color: #000;
@@ -846,7 +848,12 @@ footer {
     float: left;
     width: 75%;
     padding-left: 1.04167%;
-    padding-right: 1.04167%; } }
+    padding-right: 1.04167%;
+    height: auto; } }
+
+@media only screen and (min-width: 1024px) {
+  .concerts .event {
+    min-height: 340px; } }
 
 .concerts .sidebar {
   display: inline-block;
@@ -991,7 +998,7 @@ footer {
       width: 33.33333%;
       padding-left: 1.04167%;
       padding-right: 1.04167%;
-      margin-bottom: 50px; } }
+      margin-bottom: 0; } }
 
 .site-events img {
   z-index: -1;
@@ -1015,7 +1022,8 @@ footer {
   border-radius: 3px;
   padding: 5px;
   text-decoration: none;
-  text-align: center; }
+  text-align: center;
+  margin-top: 25px; }
   .site-events .view-all:hover, .site-events .view-all:focus {
     text-decoration: underline; }
   @media only screen and (min-width: 1024px) {
@@ -1025,7 +1033,8 @@ footer {
       width: 16.66667%;
       padding-left: 1.04167%;
       padding-right: 1.04167%;
-      margin-left: 83.33333%; } }
+      margin-left: 83.33333%;
+      margin-top: 50px; } }
 
 .site-events a {
   color: #000;

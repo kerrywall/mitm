@@ -56,7 +56,7 @@ get_header();
 		<?php
 
 		$args = array(
-			'post_type' => array( 'concert' ), 'post_count' =>3
+			'post_type' => array( 'concert' ), 'posts_per_page' => 3
 		);
 
 		// The Query

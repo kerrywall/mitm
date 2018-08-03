@@ -9,6 +9,12 @@
 	.site-events {
 		@include min-screen(1024px) {
 			@include column(9);
+			height: auto;
+		}
+	}
+	.event {
+		@include min-screen(1024px) {
+			min-height: 340px;
 		}
 	}
 	.sidebar {
