@@ -45,7 +45,7 @@
 		text-transform: uppercase;
 		list-style-type: none;
 		margin: 0 20px;
-		&.current_page_item a {
+		&.current_page_item > a {
 			border-bottom: 1px #000 dotted;
 		}
 	}
@@ -59,6 +59,26 @@
 }
 
 .hero {
+	width: 100%;
 	max-width: 100%;
 	height: auto;
+}
+
+.menu-item-has-children {
+	.sub-menu {
+		@include min-screen(1024px) {
+			display: none;
+			position: absolute;
+		}
+		li {
+			margin: 0;
+		}
+	}
+	&:hover, &:focus, &:active {
+		.sub-menu {
+			@include min-screen(1024px) {
+				display: block;
+			}
+		}
+	}
 }

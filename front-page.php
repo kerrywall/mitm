@@ -16,9 +16,9 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
-		<?php if ( is_front_page() ) : ?>
-			<img class="hero" src="<?php echo get_template_directory_uri() ?>/img/larisa-birta-102093-unsplash.jpg" alt="">
-		<?php endif; ?>
+		<?php if ( is_front_page() ) : 
+			echo '<img class="hero" src="'.get_field('hero')['url'].'">';
+		endif; ?>
 		<main id="main" class="site-main clearfix">
 
 		<?php

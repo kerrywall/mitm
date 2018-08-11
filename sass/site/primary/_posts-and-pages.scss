@@ -26,3 +26,11 @@
 .entry-content {
 	@include column(12);
 }
+
+// search
+
+.search-results {
+	.entry-header {
+		margin-top: 0;
+	}
+}

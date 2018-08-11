@@ -16,8 +16,30 @@
 	</section><!-- .entry-content -->
 
 	<aside class="entry-sidebar">
-		<h2>Artist Information</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi alias totam necessitatibus enim voluptatibus dignissimos repellendus ea, voluptas corporis sunt veniam in earum consequatur adipisci, est. Quis, voluptates. Nisi, autem?</p>
+		<?php // check if the repeater field has rows of data
+			// check if the repeater field has rows of data
+			if(have_rows('artists') ):
+
+				echo '<h2>Artist Information</h2>';
+
+			 	// loop through the rows of data
+			    while (have_rows('artists') ) : the_row();
+
+			        // override $post
+			        	$post = get_sub_field('artist');
+			        	setup_postdata( $post ); ?>
+			            <h3><?php the_title(); ?></h3>
+			            <?php the_content(); ?>
+			            <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
+
+			    endwhile;
+
+			else :
+
+			    // no rows found
+
+			endif;
+		?>
 	</aside>
 
 	

@@ -510,6 +510,9 @@ p {
   padding-left: 1.04167%;
   padding-right: 1.04167%; }
 
+.search-results .entry-header {
+  margin-top: 0; }
+
 @media only screen and (min-width: 1024px) {
   .site-events {
     position: relative;
@@ -654,7 +657,7 @@ a {
     text-transform: uppercase;
     list-style-type: none;
     margin: 0 20px; }
-    .main-navigation li.current_page_item a {
+    .main-navigation li.current_page_item > a {
       border-bottom: 1px #000 dotted; }
   .main-navigation a {
     text-decoration: none;
@@ -663,8 +666,21 @@ a {
       text-decoration: underline; }
 
 .hero {
+  width: 100%;
   max-width: 100%;
   height: auto; }
+
+@media only screen and (min-width: 1024px) {
+  .menu-item-has-children .sub-menu {
+    display: none;
+    position: absolute; } }
+
+.menu-item-has-children .sub-menu li {
+  margin: 0; }
+
+@media only screen and (min-width: 1024px) {
+  .menu-item-has-children:hover .sub-menu, .menu-item-has-children:focus .sub-menu, .menu-item-has-children:active .sub-menu {
+    display: block; } }
 
 footer {
   margin-top: 50px;
