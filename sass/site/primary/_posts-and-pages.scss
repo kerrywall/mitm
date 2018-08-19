@@ -2,9 +2,6 @@
 
 .type-page {
 	.entry-header {
-		@include min-screen(1024px) {
-			margin-top: 150px;
-		}
 	}
 }
 

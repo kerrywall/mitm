@@ -32,8 +32,10 @@
 
 .main-navigation {
 	@include column(12);
+	display: none;
 	@include min-screen(1024px) {
-		@include column(5);	
+		position: relative;
+		@include column(8);	
 	}
 	ul {
 		display: inline-flex;
@@ -41,12 +43,12 @@
 		padding: 0;
 	}
 	li {
-		@include font-size(0.9);
+		@include font-size(1);
 		text-transform: uppercase;
 		list-style-type: none;
 		margin: 0 20px;
 		&.current_page_item > a {
-			border-bottom: 1px #000 dotted;
+			text-decoration: underline;
 		}
 	}
 	a {
@@ -78,7 +80,21 @@
 		.sub-menu {
 			@include min-screen(1024px) {
 				display: block;
+			    position: absolute;
+		        background-color: rgba(255, 255, 255, 0.85);
+		        z-index: 3;
+		        padding: 10px 0 10px 15px;
+		        width: 225px;
+		        top: 36px;
 			}
 		}
+		.sub-menu li {
+		}
+	}
+}
+
+.slicknav_menu {
+	@include min-screen(1024px) {
+		display: none;
 	}
 }

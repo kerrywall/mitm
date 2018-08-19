@@ -1,0 +1,3 @@
+$(function(){
+	$('#primary-menu').slicknav();
+});
