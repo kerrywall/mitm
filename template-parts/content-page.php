@@ -15,16 +15,15 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php } else { ?>
-
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-
-	<?php } ?>
+	<?php } else { } ?>
 
 	<div class="entry-content">
-		<?php
+		<?php if (!is_front_page()) { ?>
+		<header class="entry-header">
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		</header><!-- .entry-header -->
+
+		<?php }
 		the_content();
 
 		wp_link_pages( array(
@@ -33,6 +32,10 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
+	<?php if (is_front_page()) { ?>
+	<div class="post-thumbnail">
+		<?php the_post_thumbnail(); ?>
+	</div>
+	<?php } ?>
 
-	<?php musicinthemorning_post_thumbnail(); ?>
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -3,7 +3,7 @@
 		position: absolute;
 		top: 0;
 		width: 100%;
-		background-color: rgba(255, 255, 255, 0.85);
+		background-color: rgba(255, 255, 255, 0.9);
 		z-index: 2;
 	}
 }
@@ -43,12 +43,13 @@
 		padding: 0;
 	}
 	li {
-		@include font-size(1);
+		@include font-size(0.95);
 		text-transform: uppercase;
 		list-style-type: none;
 		margin: 0 20px;
+		height: 35px;
 		&.current_page_item > a {
-			text-decoration: underline;
+			font-weight: bold;
 		}
 	}
 	a {
@@ -81,14 +82,15 @@
 			@include min-screen(1024px) {
 				display: block;
 			    position: absolute;
-		        background-color: rgba(255, 255, 255, 0.85);
+		        background-color: #fff;
 		        z-index: 3;
-		        padding: 10px 0 10px 15px;
+		        padding: 10px 15px;
+		        top: 45px;
 		        width: 225px;
-		        top: 36px;
 			}
 		}
 		.sub-menu li {
+			text-transform: none;
 		}
 	}
 }

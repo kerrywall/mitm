@@ -16,6 +16,9 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area concerts">
+		<?php  
+			echo '<img class="hero" src="'.get_the_post_thumbnail_url().'">';
+		?>
 		<main id="main" class="site-main">
 
 		<?php

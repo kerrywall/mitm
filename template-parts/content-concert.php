@@ -16,7 +16,10 @@
 	</section><!-- .entry-content -->
 
 	<aside class="entry-sidebar">
-		<?php // check if the repeater field has rows of data
+
+		<?php 
+
+		// check if the repeater field has rows of data
 			// check if the repeater field has rows of data
 			if(have_rows('artists') ):
 
@@ -33,6 +36,25 @@
 			            <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
 
 			    endwhile;
+
+			else :
+
+			    // no rows found
+
+			endif;
+
+			// check if the repeater field has rows of data
+			// check if the repeater field has rows of data
+			if(get_field('location') ):
+
+				echo '<h2>Location</h2>';
+
+
+			        // override $post
+			        	$post = get_field('location');
+			        	setup_postdata( $post ); ?>
+			            <h3><?php the_title(); ?></h3>
+			            <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
 
 			else :
 

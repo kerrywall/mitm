@@ -59,7 +59,7 @@
 					while ( $the_query->have_posts() ) {
 						$the_query->the_post();
 						if (has_post_thumbnail()) {
-							$thumbnail = get_the_post_thumbnail_url($large);
+							$thumbnail = get_the_post_thumbnail_url($post->ID, 'large');
 						} else {
 							$thumbnail = get_template_directory_uri() . '/img/radek-grzybowski-74331-unsplash.jpg';
 						}

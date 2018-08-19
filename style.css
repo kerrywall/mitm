@@ -58,6 +58,181 @@ body {
   body:after {
     clear: both; }
 
+/*!
+ * SlickNav Responsive Mobile Menu v1.0.10
+ * (c) 2016 Josh Cope
+ * licensed under MIT
+ */
+.slicknav_btn {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  float: right;
+  padding: 0.438em 0.625em 0.438em 0.625em;
+  line-height: 1.125em;
+  cursor: pointer; }
+
+.slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+  margin-top: 0.188em; }
+
+.slicknav_menu {
+  *zoom: 1; }
+
+.slicknav_menu .slicknav_menutxt {
+  display: block;
+  line-height: 1.188em;
+  float: left; }
+
+.slicknav_menu .slicknav_icon {
+  float: left;
+  width: 1.125em;
+  height: 0.875em;
+  margin: 0.188em 0 0 0.438em; }
+
+.slicknav_menu .slicknav_icon:before {
+  background: transparent;
+  width: 1.125em;
+  height: 0.875em;
+  display: block;
+  content: "";
+  position: absolute; }
+
+.slicknav_menu .slicknav_no-text {
+  margin: 0; }
+
+.slicknav_menu .slicknav_icon-bar {
+  display: block;
+  width: 1.125em;
+  height: 0.125em;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
+
+.slicknav_menu:before {
+  content: " ";
+  display: table; }
+
+.slicknav_menu:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+.slicknav_nav {
+  clear: both; }
+
+.slicknav_nav ul {
+  display: block; }
+
+.slicknav_nav li {
+  display: block; }
+
+.slicknav_nav .slicknav_arrow {
+  font-size: 0.8em;
+  margin: 0 0 0 0.4em; }
+
+.slicknav_nav .slicknav_item {
+  cursor: pointer; }
+
+.slicknav_nav .slicknav_item a {
+  display: inline; }
+
+.slicknav_nav .slicknav_row {
+  display: block; }
+
+.slicknav_nav a {
+  display: block; }
+
+.slicknav_nav .slicknav_parent-link a {
+  display: inline; }
+
+.slicknav_brand {
+  float: left; }
+
+.slicknav_menu {
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #4c4c4c;
+  padding: 5px; }
+
+.slicknav_menu * {
+  box-sizing: border-box; }
+
+.slicknav_menu .slicknav_menutxt {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 1px 3px #000; }
+
+.slicknav_menu .slicknav_icon-bar {
+  background-color: #fff; }
+
+.slicknav_btn {
+  margin: 5px 5px 6px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #222; }
+
+.slicknav_nav {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875em;
+  list-style: none;
+  overflow: hidden; }
+
+.slicknav_nav ul {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 0 0 20px; }
+
+.slicknav_nav .slicknav_row {
+  padding: 5px 10px;
+  margin: 2px 5px; }
+
+.slicknav_nav .slicknav_row:hover {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: #ccc;
+  color: #fff; }
+
+.slicknav_nav a {
+  padding: 5px 10px;
+  margin: 2px 5px;
+  text-decoration: none;
+  color: #fff; }
+
+.slicknav_nav a:hover {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: #ccc;
+  color: #222; }
+
+.slicknav_nav .slicknav_txtnode {
+  margin-left: 15px; }
+
+.slicknav_nav .slicknav_item a {
+  padding: 0;
+  margin: 0; }
+
+.slicknav_nav .slicknav_parent-link a {
+  padding: 0;
+  margin: 0; }
+
+.slicknav_brand {
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 7px 12px;
+  height: 44px; }
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -283,8 +458,8 @@ h1.entry-title {
       font-size: 2rem; } }
 
 h2 {
-  font-size: 32px;
-  font-size: 2rem; }
+  font-size: 24px;
+  font-size: 1.5rem; }
 
 p {
   margin-bottom: 1.5em; }
@@ -484,10 +659,6 @@ p {
       margin-top: 75px; } }
 
 @media only screen and (min-width: 1024px) {
-  .type-page .entry-header {
-    margin-top: 150px; } }
-
-@media only screen and (min-width: 1024px) {
   .search-results .page-header {
     margin-top: 150px; } }
 
@@ -611,7 +782,7 @@ a {
     position: absolute;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 2; } }
 
 @media only screen and (min-width: 1024px) {
@@ -639,12 +810,14 @@ a {
   float: left;
   width: 100%;
   padding-left: 1.04167%;
-  padding-right: 1.04167%; }
+  padding-right: 1.04167%;
+  display: none; }
   @media only screen and (min-width: 1024px) {
     .main-navigation {
+      position: relative;
       display: inline-block;
       float: left;
-      width: 41.66667%;
+      width: 66.66667%;
       padding-left: 1.04167%;
       padding-right: 1.04167%; } }
   .main-navigation ul {
@@ -652,13 +825,14 @@ a {
     align-items: center;
     padding: 0; }
   .main-navigation li {
-    font-size: 14.4px;
-    font-size: 0.9rem;
+    font-size: 15.2px;
+    font-size: 0.95rem;
     text-transform: uppercase;
     list-style-type: none;
-    margin: 0 20px; }
+    margin: 0 20px;
+    height: 35px; }
     .main-navigation li.current_page_item > a {
-      border-bottom: 1px #000 dotted; }
+      font-weight: bold; }
   .main-navigation a {
     text-decoration: none;
     color: #4A4A4A; }
@@ -680,7 +854,20 @@ a {
 
 @media only screen and (min-width: 1024px) {
   .menu-item-has-children:hover .sub-menu, .menu-item-has-children:focus .sub-menu, .menu-item-has-children:active .sub-menu {
-    display: block; } }
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    z-index: 3;
+    padding: 10px 15px;
+    top: 45px;
+    width: 225px; } }
+
+.menu-item-has-children:hover .sub-menu li, .menu-item-has-children:focus .sub-menu li, .menu-item-has-children:active .sub-menu li {
+  text-transform: none; }
+
+@media only screen and (min-width: 1024px) {
+  .slicknav_menu {
+    display: none; } }
 
 footer {
   margin-top: 50px;
@@ -855,7 +1042,7 @@ footer {
   padding-right: 1.04167%; }
   @media only screen and (min-width: 1024px) {
     .concerts .entry-header {
-      margin-top: 60px;
+      margin-top: 0;
       text-align: center; } }
 
 @media only screen and (min-width: 1024px) {

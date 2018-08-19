@@ -29,7 +29,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php musicinthemorning_post_thumbnail(); ?>
+	<?php echo get_field('hero_image'); ?>
 
 	<div class="entry-content">
 		<?php
