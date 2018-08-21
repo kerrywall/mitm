@@ -47,7 +47,7 @@
 				<?php
 
 				$args = array(
-					'post_type' => array( 'concert' )
+					'post_type' => array( 'concert' ), 'meta_key'=> 'sort_date', 'orderby'	=> 'meta_value_num', 'order' => 'ASC'
 				);
 
 				// The Query

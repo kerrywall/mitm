@@ -56,7 +56,7 @@ get_header();
 		<?php
 
 		$args = array(
-			'post_type' => array( 'concert' ), 'posts_per_page' => 3
+			'post_type' => array( 'concert' ), 'posts_per_page' => 3, 'meta_key'=> 'sort_date', 'orderby'	=> 'meta_value_num', 'order' => 'ASC'
 		);
 
 		// The Query

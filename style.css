@@ -860,7 +860,8 @@ a {
     z-index: 3;
     padding: 10px 15px;
     top: 45px;
-    width: 225px; } }
+    width: 225px;
+    border-top: 5px solid #333; } }
 
 .menu-item-has-children:hover .sub-menu li, .menu-item-has-children:focus .sub-menu li, .menu-item-has-children:active .sub-menu li {
   text-transform: none; }

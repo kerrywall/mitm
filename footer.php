@@ -37,7 +37,6 @@
 			</div>
 			<div class="contact">
 				<h2>Contact Us</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				<p class="email"><a href="mailto:info@musicinthemorning.org">info@musicinthemorning.org</a></p>
 				<p class="address">Music in the Morning<br>
 					PO Box 95024, Kingsgate RPO<br>
