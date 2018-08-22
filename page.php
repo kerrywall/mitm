@@ -17,7 +17,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<?php  
-			echo '<img class="hero" src="'.get_the_post_thumbnail_url().'">';
+			echo '<div class="hero-wrapper"><img class="hero" src="'.get_the_post_thumbnail_url().'"></div>';
 		?>
 		<main id="main" class="site-main">
 

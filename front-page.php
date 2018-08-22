@@ -17,7 +17,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<?php if ( is_front_page() ) : 
-			echo '<img class="hero" src="'.get_field('hero')['url'].'">';
+			echo '<div class="hero-wrapper"><img class="hero" src="'.get_field('hero')['url'].'"></div>';
 		endif; ?>
 		<main id="main" class="site-main clearfix">
 

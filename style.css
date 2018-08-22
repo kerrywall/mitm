@@ -661,6 +661,11 @@ p {
       margin-top: 75px; } }
 
 @media only screen and (min-width: 1024px) {
+  .hero-wrapper {
+    max-height: 85vh;
+    overflow: hidden; } }
+
+@media only screen and (min-width: 1024px) {
   .search-results .page-header {
     margin-top: 150px; } }
 
@@ -827,11 +832,11 @@ a {
     align-items: center;
     padding: 0; }
   .main-navigation li {
-    font-size: 15.2px;
-    font-size: 0.95rem;
+    font-size: 14.4px;
+    font-size: 0.9rem;
     text-transform: uppercase;
     list-style-type: none;
-    margin: 0 20px;
+    margin: 0 15px;
     height: 35px; }
     .main-navigation li.current_page_item > a {
       font-weight: bold; }

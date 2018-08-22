@@ -18,22 +18,28 @@
 	<aside class="entry-sidebar">
 
 		<?php 
-
-		// check if the repeater field has rows of data
 			// check if the repeater field has rows of data
-			if(have_rows('artists') ):
-
-				echo '<h2>Artist Information</h2>';
+			if( have_rows('artists') ):
 
 			 	// loop through the rows of data
-			    while (have_rows('artists') ) : the_row();
+			    while ( have_rows('artists') ) : the_row();
 
-			        // override $post
-			        	$post = get_sub_field('artist');
-			        	setup_postdata( $post ); ?>
-			            <h3><?php the_title(); ?></h3>
-			            <?php the_content(); ?>
+			        $post_object = get_sub_field('artist');
+
+			        if( $post_object ): 
+
+			        	// override $post
+			        	$post = $post_object;
+			        	setup_postdata( $post ); 
+
+			        	?>
+			            
+		            	<h2><?php the_title(); ?></h2>
+		            	<p><?php the_content(); ?></p>
+			            
 			            <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
+
+			        endif;
 
 			    endwhile;
 
@@ -43,24 +49,22 @@
 
 			endif;
 
-			// check if the repeater field has rows of data
-			// check if the repeater field has rows of data
-			if(get_field('location') ):
+			echo '<h2>Concert Schedule</h2>';
 
-				echo '<h2>Location</h2>';
+			$series = get_the_category()[0]->cat_name;
 
+			if ($series == "Main Series") {
+ 
+				echo '<h3>Wednesdays & Thursdays</h3>
+				<p><strong>Vancouver Academy of Music</strong><br>
+				Coffee 10am – Concert 10:30am</p>';
 
-			        // override $post
-			        	$post = get_field('location');
-			        	setup_postdata( $post ); ?>
-			            <h3><?php the_title(); ?></h3>
-			            <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
+				echo '<h3>Fridays</h3>
+				<p><strong>Christ Church Cathedral</strong><br>
+				Coffee 11am – Concert 11:30am</p>';
 
-			else :
-
-			    // no rows found
-
-			endif;
+			}
+			
 		?>
 	</aside>
 

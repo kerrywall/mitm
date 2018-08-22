@@ -5,6 +5,13 @@
 	}
 }
 
+.hero-wrapper {
+	@include min-screen(1024px) {
+		max-height: 85vh;
+		overflow: hidden;
+	}
+}
+
 .search-results {
 	.page-header {
 		@include min-screen(1024px) {

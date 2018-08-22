@@ -19,17 +19,6 @@
 				<h2>About Us</h2>
 				<p>Music in the Morning is a distinctive morning concert series that inspires its audiences with masterpieces of the past, while challenging them with music of our time performed by the finest local, national and international talent – all at affordable ticket prices.</p>
 			</div>
-			<div class="news">
-				<h2>News</h2>
-				<ul>
-					<li>
-						<span class="title">Lorem ipsum dolor sit amet</span>
-						<span class="date">January 2, 2019</span>
-					</li>
-					<li></li>
-					<li></li>
-				</ul>
-			</div>
 			<div class="donate">
 				<h2>Donate to MITM</h2>
 				<p>Ticket sales and subscriptions make up only half the revenue needed for us to be able to provide varied and high quality programming and meaningful concert experiences for people of all ages at Music in the Morning. Gifts from our audience members and other supporters help us make up for this funding gap.</p>
@@ -42,6 +31,9 @@
 					PO Box 95024, Kingsgate RPO<br>
 					Vancouver, BC<br>
 					V5T 4T8</p>
+			</div>
+			<div class="news">
+				<a class="twitter-timeline" data-height="300" data-theme="dark" href="https://twitter.com/MITMVancouver?ref_src=twsrc%5Etfw">Tweets by MITMVancouver</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 		</section><!-- .site-info -->
 	</footer><!-- #colophon -->
