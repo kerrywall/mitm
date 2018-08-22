@@ -651,6 +651,8 @@ p {
 .home .site-events {
   background: #EAEFF2;
   padding: 50px 0; }
+  .home .site-events h2 {
+    margin-top: 0; }
   .home .site-events .content {
     max-width: 1170px;
     margin: 0 auto; }

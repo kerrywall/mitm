@@ -67,8 +67,7 @@ get_header();
 
 			echo '<section id="events" class="site-events">
 				<div class="content">
-					<h2>Upcoming Events</h2>
-					<h3>Nam euismod sapien velit, id pretium odio ullamcorper non. </h3>';
+					<h2>Upcoming Events</h2>';
 			while ( $the_query->have_posts() ) {
 
 				$the_query->the_post();

@@ -31,6 +31,9 @@
 		}
 	}
 	.site-events {
+		h2 {
+			margin-top: 0;
+		}
 		.content {
 			@include wrapper();
 		}
