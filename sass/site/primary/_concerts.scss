@@ -16,6 +16,11 @@
 		@include min-screen(1024px) {
 			min-height: 340px;
 		}
+		img {
+			@include min-screen(1024px) {
+				max-height: 165px;
+			}
+		}
 	}
 	.sidebar {
 		@include column(12);
