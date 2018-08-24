@@ -621,13 +621,6 @@ p {
   padding-left: 1.04167%;
   padding-right: 1.04167%; }
   @media only screen and (min-width: 1024px) {
-    .home .entry-content {
-      display: inline-block;
-      float: left;
-      width: 58.33333%;
-      padding-left: 1.04167%;
-      padding-right: 1.04167%; } }
-  @media only screen and (min-width: 1024px) {
     .home .entry-content p {
       margin-top: 0; } }
 
@@ -691,6 +684,47 @@ p {
 .search-results .entry-header {
   margin-top: 0; }
 
+.page-id-75 h2 {
+  margin-top: 50px;
+  clear: both; }
+
+.page-id-75 .sponsor {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%; }
+  @media only screen and (min-width: 1024px) {
+    .page-id-75 .sponsor {
+      display: inline-block;
+      float: left;
+      width: 25%;
+      padding-left: 1.04167%;
+      padding-right: 1.04167%; } }
+
+.page-id-75 .main-sponsor {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%; }
+  @media only screen and (min-width: 1024px) {
+    .page-id-75 .main-sponsor {
+      display: inline-block;
+      float: left;
+      width: 50%;
+      padding-left: 1.04167%;
+      padding-right: 1.04167%; } }
+
+.page-id-75 .row {
+  clear: both; }
+  .page-id-75 .row .clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both; }
+
 @media only screen and (min-width: 1024px) {
   .site-events {
     position: relative;
@@ -741,7 +775,8 @@ p {
 
 .site-events img {
   z-index: -1;
-  height: auto; }
+  height: auto;
+  width: 100%; }
 
 .site-events .description {
   background-color: #fff;
@@ -1063,12 +1098,16 @@ footer {
     height: auto; } }
 
 @media only screen and (min-width: 1024px) {
-  .concerts .event {
-    min-height: 340px; } }
+  .concerts .site-events.smv {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%; } }
 
 @media only screen and (min-width: 1024px) {
-  .concerts .event img {
-    max-height: 165px; } }
+  .concerts .event {
+    min-height: 340px; } }
 
 .concerts .sidebar {
   display: inline-block;
@@ -1217,7 +1256,8 @@ footer {
 
 .site-events img {
   z-index: -1;
-  height: auto; }
+  height: auto;
+  width: 100%; }
 
 .site-events .description {
   background-color: #fff;
