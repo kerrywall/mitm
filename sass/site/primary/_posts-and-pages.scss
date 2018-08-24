@@ -38,3 +38,35 @@
 		margin-top: 0;
 	}
 }
+
+// sponsors
+
+.page-id-75 {
+	h2 {
+		margin-top: 50px;
+		clear: both;
+	}
+
+	.sponsor {
+		@include column(6);
+		@include min-screen(1024px) {
+			@include column(3);
+		}
+	}
+	.main-sponsor {
+		@include column(12);
+		@include min-screen(1024px) {
+			@include column(6);
+		}
+	}
+	.row {
+		clear: both;
+		.clearfix:after {
+		   content: " ";
+		   visibility: hidden;
+		   display: block;
+		   height: 0;
+		   clear: both;
+		}
+	}
+}
