@@ -32,10 +32,5 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
-	<?php if (is_front_page()) { ?>
-	<div class="post-thumbnail">
-		<?php the_post_thumbnail(); ?>
-	</div>
-	<?php } ?>
 
 </article><!-- #post-<?php the_ID(); ?> -->
