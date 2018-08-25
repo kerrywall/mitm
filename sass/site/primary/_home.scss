@@ -11,9 +11,9 @@
 	}
 	.entry-content {
 		@include column(12);
-		@include min-screen(1024px) {
-			@include column(7);
-		}
+		// @include min-screen(1024px) {
+		// 	@include column(7);
+		// }
 		p {
 			@include min-screen(1024px) {
 				margin-top: 0;

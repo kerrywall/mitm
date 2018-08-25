@@ -11,15 +11,15 @@
 			@include column(9);
 			height: auto;
 		}
+		&.smv {
+			@include min-screen(1024px) {
+				@include column(12);
+			}
+		}
 	}
 	.event {
 		@include min-screen(1024px) {
 			min-height: 340px;
-		}
-		img {
-			@include min-screen(1024px) {
-				max-height: 165px;
-			}
 		}
 	}
 	.sidebar {
