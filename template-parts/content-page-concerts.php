@@ -16,31 +16,7 @@
 	<section class="entry-content">
 		<aside class="sidebar">
 			<?php get_search_form(); ?>
-			<h3>Locations</h3>
-			<?php 
-			// The Query
-
-			$args = array(
-				'post_type' => array( 'location' )
-			);
-
-			$locations = new WP_Query( $args );
-
-			// The Loop
-			if ( $locations->have_posts() ) {
-				echo '<div class="location">';
-				while ( $locations->have_posts() ) {
-					$locations->the_post();
-					echo '<h4>' . get_the_title() . '</h4>';
-					echo get_field('map');
-				}
-				echo '</div>';
-				/* Restore original Post Data */
-				wp_reset_postdata();
-			} else {
-				// no posts found
-			}
-			?>
+			<?php get_sidebar(); ?>
 		</aside>
 		
 			<div class="content">

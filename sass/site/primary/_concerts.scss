@@ -23,21 +23,15 @@
 		}
 	}
 	.sidebar {
-		@include column(12);
+		display: none;
 		@include min-screen(1024px) {
 			@include column(3);
 		}
+		h2 {
+			text-transform: none;
+		}
 		iframe {
 			max-width: 100%;
-		}
-		input, -webkit-input {
-			border-radius: 0;
-		    border: 1px solid black;
-		    padding: 5px;
-		    transition: 0.25s all ease;
-		}
-		input.search-submit:hover, -webkit-input.search-submit:hover {
-			background: #EAEFF2;
 		}
 	}
 }

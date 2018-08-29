@@ -654,9 +654,32 @@ p {
       margin-top: 75px; } }
 
 @media only screen and (min-width: 1024px) {
-  .hero-wrapper {
-    max-height: 85vh;
-    overflow: hidden; } }
+  .no-hero {
+    margin-top: 150px; } }
+
+input, -webkit-input {
+  border-radius: 0;
+  border: 1px solid black;
+  padding: 5px;
+  transition: 0.25s all ease; }
+
+input.search-submit:hover, -webkit-input.search-submit:hover {
+  background: #EAEFF2; }
+
+.hero-wrapper {
+  position: relative; }
+  @media only screen and (min-width: 1024px) {
+    .hero-wrapper {
+      max-height: 85vh;
+      overflow: hidden; } }
+  .hero-wrapper .read-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px; }
+  .hero-wrapper a:hover {
+    text-decoration: none; }
 
 @media only screen and (min-width: 1024px) {
   .search-results .page-header {
@@ -724,6 +747,56 @@ p {
     display: block;
     height: 0;
     clear: both; }
+
+.page-id-99 .sidebar {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%; }
+  @media only screen and (min-width: 1024px) {
+    .page-id-99 .sidebar {
+      display: inline-block;
+      float: left;
+      width: 25%;
+      padding-left: 1.04167%;
+      padding-right: 1.04167%; } }
+  .page-id-99 .sidebar iframe {
+    max-width: 100%; }
+
+.page-id-99 .content {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%; }
+  @media only screen and (min-width: 1024px) {
+    .page-id-99 .content {
+      display: inline-block;
+      float: left;
+      width: 75%;
+      padding-left: 1.04167%;
+      padding-right: 1.04167%; } }
+
+@media only screen and (min-width: 1024px) {
+  .blog .site-content {
+    margin-top: 100px; } }
+
+.blog .type-post {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%; }
+
+.blog .entry-content {
+  padding: 0; }
+
+.blog .entry-footer {
+  display: none; }
+
+.blog .entry-title {
+  margin-bottom: 0; }
 
 @media only screen and (min-width: 1024px) {
   .site-events {
@@ -1110,11 +1183,7 @@ footer {
     min-height: 340px; } }
 
 .concerts .sidebar {
-  display: inline-block;
-  float: left;
-  width: 100%;
-  padding-left: 1.04167%;
-  padding-right: 1.04167%; }
+  display: none; }
   @media only screen and (min-width: 1024px) {
     .concerts .sidebar {
       display: inline-block;
@@ -1122,15 +1191,10 @@ footer {
       width: 25%;
       padding-left: 1.04167%;
       padding-right: 1.04167%; } }
+  .concerts .sidebar h2 {
+    text-transform: none; }
   .concerts .sidebar iframe {
     max-width: 100%; }
-  .concerts .sidebar input, .concerts .sidebar -webkit-input {
-    border-radius: 0;
-    border: 1px solid black;
-    padding: 5px;
-    transition: 0.25s all ease; }
-  .concerts .sidebar input.search-submit:hover, .concerts .sidebar -webkit-input.search-submit:hover {
-    background: #EAEFF2; }
 
 footer {
   margin-top: 50px;
