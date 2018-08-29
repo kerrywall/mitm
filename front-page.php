@@ -17,7 +17,24 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<?php if ( is_front_page() ) : 
-			echo '<div class="hero-wrapper"><img class="hero" src="'.get_field('hero')['url'].'"></div>';
+			echo '<div class="hero-wrapper"><img class="hero" src="'.get_field('hero')['url'].'">';
+			// The Query
+			$blogargs = array('posts_per_page' => 1);
+			$blog_query = new WP_Query( $blogargs );
+
+			// The Loop
+			if ( $blog_query->have_posts() ) {
+				$blog_query->the_post();
+				echo '<div class="read-more"><a href="updates">'. get_the_title() . ' &raquo; Read more</a></div>';
+				
+				/* Restore original Post Data */
+				wp_reset_postdata();
+			} else {
+				// no posts found
+			}
+
+
+			echo '</div>';
 		endif; ?>
 		<main id="main" class="site-main clearfix">
 

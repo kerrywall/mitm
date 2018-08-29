@@ -5,10 +5,38 @@
 	}
 }
 
+.no-hero {
+	@include min-screen(1024px) {
+		margin-top: 150px;
+	}
+}
+
+// search tool
+input, -webkit-input {
+	border-radius: 0;
+    border: 1px solid black;
+    padding: 5px;
+    transition: 0.25s all ease;
+}
+input.search-submit:hover, -webkit-input.search-submit:hover {
+	background: #EAEFF2;
+}
+
 .hero-wrapper {
+	position: relative;
 	@include min-screen(1024px) {
 		max-height: 85vh;
 		overflow: hidden;
+	}
+	.read-more {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background: rgba(255, 255, 255, 0.9);
+		padding: 10px 20px;
+	}
+	a:hover {
+		text-decoration: none;
 	}
 }
 
@@ -68,5 +96,45 @@
 		   height: 0;
 		   clear: both;
 		}
+	}
+}
+
+// noon with june
+.page-id-99 {
+	.sidebar {
+		@include column(12)
+		@include min-screen(1024px) {
+			@include column(3);
+		}
+		iframe {
+			max-width: 100%;
+		}
+	}
+	.content {
+		@include column(12);
+		@include min-screen(1024px) {
+			@include column(9);
+		}
+	}
+}
+
+// blog index
+.blog {
+	.site-content {
+		@include min-screen(1024px) {
+			margin-top: 100px;
+		}
+	}
+	.type-post {
+		@include column(12);
+	}
+	.entry-content {
+		padding: 0;
+	}
+	.entry-footer {
+		display: none;
+	}
+	.entry-title {
+		margin-bottom: 0;
 	}
 }
