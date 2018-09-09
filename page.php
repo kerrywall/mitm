@@ -17,7 +17,9 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<?php  
-			echo '<div class="hero-wrapper"><img class="hero" src="'.get_the_post_thumbnail_url().'"></div>';
+			if (get_the_post_thumbnail()) {
+				echo '<div class="hero-wrapper"><img class="hero" src="'.get_the_post_thumbnail_url().'" alt="'.esc_html ( get_the_post_thumbnail_caption() ).'"></div>';
+			}
 		?>
 		<main id="main" class="site-main">
 

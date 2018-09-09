@@ -508,6 +508,9 @@ p, li {
 p {
   line-height: 1.75; }
 
+a:hover {
+  text-decoration: none; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -707,6 +710,10 @@ input.search-submit:hover, -webkit-input.search-submit:hover {
 .search-results .entry-header {
   margin-top: 0; }
 
+@media only screen and (min-width: 1024px) {
+  .page-id-75 .site-content {
+    margin-top: 100px; } }
+
 .page-id-75 h2 {
   margin-top: 50px;
   clear: both; }
@@ -797,6 +804,10 @@ input.search-submit:hover, -webkit-input.search-submit:hover {
 
 .blog .entry-title {
   margin-bottom: 0; }
+
+@media only screen and (min-width: 1024px) {
+  .page-id-148 .site-content {
+    margin-top: 100px; } }
 
 @media only screen and (min-width: 1024px) {
   .site-events {
