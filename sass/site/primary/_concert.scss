@@ -78,4 +78,15 @@
 		margin: 0;
 		text-transform: none;
 	}
+	p.ticket-link {
+		margin: 0;
+	}
+	.tickets {
+		margin-bottom: 20px;
+		@include min-screen(1024px) {
+			margin-bottom: 0;
+			padding: 20px;
+			background: $color__background-light;
+		}
+	}
 }

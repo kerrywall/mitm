@@ -1,4 +1,4 @@
-footer {
+.site-footer {
 	margin-top: 50px;
 	background-color: $dark-bg;
 	color: $color__text-main;
@@ -44,6 +44,7 @@ footer {
 		margin-top: 0;
 		@include font-size(1);
 		color: #fff;
+		text-transform: uppercase;
 	}
 	p, li {
 		@include font-size(0.8);

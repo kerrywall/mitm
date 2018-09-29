@@ -13,6 +13,42 @@
 
 	<section class="entry-content">
 		<?php the_content(); ?>
+		<?php 				
+
+		$series = get_the_category()[0]->cat_name;
+
+		if ($series == "Main Series") {
+
+			echo '<div class="tickets"><h2>Single Tickets</h2>';
+
+			echo '<p><strong>Main Concert Series & Summer Music Vancouver</strong><br>
+$42 Adults  •  $38 Seniors</p>';
+
+			echo '<p>To buy tickets by phone, please call the box office at 604.873.4612.</p>';
+
+			// check if the repeater field has rows of data
+					if( have_rows('ticket_links') ):
+
+						echo '<h3>Buy tickets for these performances online:</h3>';
+
+					 	// loop through the rows of data
+					    while ( have_rows('ticket_links') ) : the_row();
+
+					        echo '<p class="ticket-link"><a href="'.get_sub_field('ticket_link').'">'.get_sub_field('date').'</a></p>';
+
+					    endwhile;
+
+
+					else :
+
+					    echo '<p>Tickets will be available online soon.</p>';
+
+					endif;
+					echo '</div>';
+
+				}
+
+				 ?>
 	</section><!-- .entry-content -->
 
 	<aside class="entry-sidebar">
@@ -49,9 +85,9 @@
 
 			endif;
 
-			echo '<h2>Concert Schedule</h2>';
 
-			$series = get_the_category()[0]->cat_name;
+
+			echo '<h2>Concert Schedule</h2>';
 
 			if ($series == "Main Series") {
  
@@ -62,7 +98,6 @@
 				echo '<h3>Fridays</h3>
 				<p><strong>Christ Church Cathedral</strong><br>
 				Coffee 11am – Concert 11:30am</p>';
-
 			}
 			
 		?>

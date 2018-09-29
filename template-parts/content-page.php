@@ -28,7 +28,8 @@
 		<?php } ?>
 		<?php if (is_page('noon-with-june')) { ?>
 			<aside class="sidebar">
-				<p>12:45pm-1:45pm<br>
+				<p><span style="font-style: italic; color: #333;">11:30am-12:30pm: Concert ($42)</span><br>
+<strong>12:45pm-1:45pm: Noon with June ($25)</strong><br>
 					Christ Church Cathedral<br>
 					690 Burrard Street, Vancouver<br>
 					June Goldsmith, C.M., O.B.C.</p>

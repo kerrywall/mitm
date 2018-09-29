@@ -996,38 +996,38 @@ a {
   .slicknav_menu {
     display: none; } }
 
-footer {
+.site-footer {
   margin-top: 50px;
   background-color: #252525;
   color: #dedede; }
-  footer a {
+  .site-footer a {
     color: #dedede;
     text-decoration: none;
     border-bottom: 1px dotted #dedede; }
-  footer .site-info {
+  .site-footer .site-info {
     padding: 25px 0; }
     @media only screen and (min-width: 1024px) {
-      footer .site-info {
+      .site-footer .site-info {
         padding: 50px 0;
         max-width: 1170px;
         margin: 0 auto; } }
-  footer .about, footer .news, footer .contact, footer .donate {
+  .site-footer .about, .site-footer .news, .site-footer .contact, .site-footer .donate {
     display: inline-block;
     float: left;
     width: 100%;
     padding-left: 1.04167%;
     padding-right: 1.04167%; }
     @media only screen and (min-width: 1024px) {
-      footer .about, footer .news, footer .contact, footer .donate {
+      .site-footer .about, .site-footer .news, .site-footer .contact, .site-footer .donate {
         display: inline-block;
         float: left;
         width: 25%;
         padding-left: 1.04167%;
         padding-right: 1.04167%; } }
   @media only screen and (min-width: 1024px) {
-    footer .about p {
+    .site-footer .about p {
       padding-right: 10px; } }
-  footer .donate a {
+  .site-footer .donate a {
     padding: 10px 20px;
     border-radius: 3px;
     color: #fff;
@@ -1038,27 +1038,28 @@ footer {
     text-align: right;
     transition: 0.25s all ease;
     border-bottom: none; }
-    footer .donate a:hover, footer .donate a:focus {
+    .site-footer .donate a:hover, .site-footer .donate a:focus {
       background-color: #f55200;
       text-decoration: underline; }
-  footer h2 {
+  .site-footer h2 {
     margin-top: 0;
     font-size: 16px;
     font-size: 1rem;
-    color: #fff; }
-  footer p, footer li {
+    color: #fff;
+    text-transform: uppercase; }
+  .site-footer p, .site-footer li {
     font-size: 12.8px;
     font-size: 0.8rem; }
-  footer ul {
+  .site-footer ul {
     padding: 0; }
-  footer li {
+  .site-footer li {
     list-style-type: none;
     margin: 0; }
-  footer .title {
+  .site-footer .title {
     font-weight: bold;
     font-style: italic;
     display: block; }
-  footer .date {
+  .site-footer .date {
     text-transform: uppercase; }
 
 .single-concert .entry-header h1 {
@@ -1161,6 +1162,17 @@ footer {
   margin: 0;
   text-transform: none; }
 
+.single-concert p.ticket-link {
+  margin: 0; }
+
+.single-concert .tickets {
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 1024px) {
+    .single-concert .tickets {
+      margin-bottom: 0;
+      padding: 20px;
+      background: #EAEFF2; } }
+
 .concerts .entry-header {
   display: inline-block;
   float: left;
@@ -1207,38 +1219,38 @@ footer {
   .concerts .sidebar iframe {
     max-width: 100%; }
 
-footer {
+.site-footer {
   margin-top: 50px;
   background-color: #252525;
   color: #dedede; }
-  footer a {
+  .site-footer a {
     color: #dedede;
     text-decoration: none;
     border-bottom: 1px dotted #dedede; }
-  footer .site-info {
+  .site-footer .site-info {
     padding: 25px 0; }
     @media only screen and (min-width: 1024px) {
-      footer .site-info {
+      .site-footer .site-info {
         padding: 50px 0;
         max-width: 1170px;
         margin: 0 auto; } }
-  footer .about, footer .news, footer .contact, footer .donate {
+  .site-footer .about, .site-footer .news, .site-footer .contact, .site-footer .donate {
     display: inline-block;
     float: left;
     width: 100%;
     padding-left: 1.04167%;
     padding-right: 1.04167%; }
     @media only screen and (min-width: 1024px) {
-      footer .about, footer .news, footer .contact, footer .donate {
+      .site-footer .about, .site-footer .news, .site-footer .contact, .site-footer .donate {
         display: inline-block;
         float: left;
         width: 25%;
         padding-left: 1.04167%;
         padding-right: 1.04167%; } }
   @media only screen and (min-width: 1024px) {
-    footer .about p {
+    .site-footer .about p {
       padding-right: 10px; } }
-  footer .donate a {
+  .site-footer .donate a {
     padding: 10px 20px;
     border-radius: 3px;
     color: #fff;
@@ -1249,27 +1261,28 @@ footer {
     text-align: right;
     transition: 0.25s all ease;
     border-bottom: none; }
-    footer .donate a:hover, footer .donate a:focus {
+    .site-footer .donate a:hover, .site-footer .donate a:focus {
       background-color: #f55200;
       text-decoration: underline; }
-  footer h2 {
+  .site-footer h2 {
     margin-top: 0;
     font-size: 16px;
     font-size: 1rem;
-    color: #fff; }
-  footer p, footer li {
+    color: #fff;
+    text-transform: uppercase; }
+  .site-footer p, .site-footer li {
     font-size: 12.8px;
     font-size: 0.8rem; }
-  footer ul {
+  .site-footer ul {
     padding: 0; }
-  footer li {
+  .site-footer li {
     list-style-type: none;
     margin: 0; }
-  footer .title {
+  .site-footer .title {
     font-weight: bold;
     font-style: italic;
     display: block; }
-  footer .date {
+  .site-footer .date {
     text-transform: uppercase; }
 
 /*--------------------------------------------------------------
