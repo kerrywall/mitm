@@ -22,7 +22,17 @@
 			<div class="donate">
 				<h2>Donate to MITM</h2>
 				<p>Ticket sales and subscriptions make up only half the revenue needed for us to be able to provide varied and high quality programming and meaningful concert experiences for people of all ages at Music in the Morning. Gifts from our audience members and other supporters help us make up for this funding gap.</p>
-				<p><a href="https://www.canadahelps.org/en/charities/music-in-the-morning-concert-society/" target="_blank">Donate Online</a></p>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
+				<input type="hidden" name="cmd" value="_s-xclick" />
+
+				<input type="hidden" name="hosted_button_id" value="HVW7RJZ6VTLS4" />
+
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+
+				<img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+
+				</form>
 			</div>
 			<div class="contact">
 				<h2>Contact Us</h2>
