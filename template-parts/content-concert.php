@@ -34,7 +34,7 @@ $42 Adults  •  $38 Seniors</p>';
 					 	// loop through the rows of data
 					    while ( have_rows('ticket_links') ) : the_row();
 
-					        echo '<p class="ticket-link"><a href="'.get_sub_field('ticket_link').'">'.get_sub_field('date').'</a></p>';
+					        echo '<p class="ticket-link"><a href="'.get_sub_field('ticket_link').'">'.get_sub_field('performance_date').'</a></p>';
 
 					    endwhile;
 
@@ -87,9 +87,9 @@ $42 Adults  •  $38 Seniors</p>';
 
 
 
-			echo '<h2>Concert Schedule</h2>';
-
 			if ($series == "Main Series") {
+
+				echo '<h2>Concert Schedule</h2>';
  
 				echo '<h3>Wednesdays & Thursdays</h3>
 				<p><strong>Vancouver Academy of Music</strong><br>
@@ -97,7 +97,7 @@ $42 Adults  •  $38 Seniors</p>';
 
 				echo '<h3>Fridays</h3>
 				<p><strong>Christ Church Cathedral</strong><br>
-				Coffee 11am – Concert 11:30am</p>';
+				Coffee 10am – Concert 10:30am</p>';
 			}
 			
 		?>
