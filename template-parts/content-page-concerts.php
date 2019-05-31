@@ -23,7 +23,7 @@
 				<?php
 
 				$args = array(
-					'post_type' => array( 'concert' ), 'meta_key'=> 'sort_date', 'orderby'	=> 'meta_value_num', 'order' => 'ASC', 'category_name' => 'main-series'
+					'post_type' => 'concert' , 'meta_key'=> 'sort_date', 'orderby'	=> 'meta_value_num', 'order' => 'ASC', 'category_name' => 'main-series'
 				);
 
 				// The Query
@@ -44,7 +44,7 @@
 								<img src="'.$thumbnail.'" alt="">
 								<div class="description">
 									<h4>'.get_the_title().'</h4>
-									<p>'.get_field('date').'</p>
+									<p>'.get_field('performance_date').'</p>
 								</div>
 								</a>
 							</div>';

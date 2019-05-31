@@ -17,7 +17,7 @@
 
 		$series = get_the_category()[0]->cat_name;
 
-		if ($series == "Main Series") {
+		if ($series == "Main Series" || $series == "Summer Music Vancouver") {
 
 			echo '<div class="tickets"><h2>Single Tickets</h2>';
 
@@ -70,7 +70,7 @@ $42 Adults  •  $38 Seniors</p>';
 
 			        	?>
 			            
-		            	<h2><?php the_title(); ?></h2>
+		            	<h2>Performers</h2>
 		            	<p><?php the_content(); ?></p>
 			            
 			            <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly

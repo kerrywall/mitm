@@ -27,7 +27,7 @@
 		the_content();
 
 		$args = array(
-			'post_type' => array( 'concert' ), 'meta_key'=> 'sort_date', 'orderby'	=> 'meta_value_num', 'order' => 'ASC', 'category_name' => 'summer-music-vancouver'
+			'post_type' => 'concert' , 'meta_key'=> 'sort_date', 'orderby'	=> 'meta_value_num', 'order' => 'ASC', 'category_name' => 'summer-music-vancouver'
 		);
 
 		// The Query
@@ -48,7 +48,8 @@
 						<img src="'.$thumbnail.'" alt="">
 						<div class="description">
 							<h4>'.get_the_title().'</h4>
-							<p>'.get_field('date').'</p>
+								<p>'.get_field('performance_date').'</p>
+							
 						</div>
 						</a>
 					</div>';

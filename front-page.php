@@ -98,7 +98,7 @@ get_header();
 						<img src="'.$thumbnail.'" alt="">
 						<div class="description">
 							<h4>'.get_the_title().'</h4>
-							<p>'.get_field('date').'</p>
+							<p>'.get_field('performance_date').'</p>
 						</div>
 						</a>
 					</div>';

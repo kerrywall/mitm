@@ -17,8 +17,8 @@ get_header();
 				<div class="embedded-text">
 					<header class="entry-header hero">
 						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-						<?php if (get_field('date')) { ?>
-							<p class="date"><?php echo get_field('date'); ?></p>
+						<?php if (get_field('performance_date')) { ?>
+							<p class="date"><?php echo get_field('performance_date'); ?></p>
 						<?php } ?>
 					</header><!-- .entry-header -->
 				</div>
@@ -27,7 +27,7 @@ get_header();
 			<header class="entry-header no-hero">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				<?php if (get_field('date')) { ?>
-					<p class="date"><?php echo get_field('date'); ?></p>
+					<p class="date"><?php echo get_field('performance_date'); ?></p>
 				<?php } ?>
 			</header>
 		<?php endif; ?>
