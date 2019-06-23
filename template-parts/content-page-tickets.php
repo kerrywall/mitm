@@ -44,7 +44,7 @@
 					$thumbnail = get_template_directory_uri() . '/img/radek-grzybowski-74331-unsplash.jpg';
 				}
 				echo '<div class="event">
-						<a href="'.get_permalink().'">
+						<a href="'.get_permalink().'?view=list">
 						<img src="'.$thumbnail.'" alt="">
 						<div class="description">
 							<h4>'.get_the_title().'</h4>
@@ -64,7 +64,7 @@
 
 		//subscriptions
 		$args = array(
-			'post_type' => 'concert' , 'meta_key'=> 'sort_date', 'orderby'	=> 'meta_value_num', 'order' => 'ASC', 'category_name' => 'subscription'
+			'post_type' => 'product' , 'product_cat' => 'subscription'
 		);
 
 		// The Query
@@ -82,11 +82,11 @@
 					$thumbnail = get_template_directory_uri() . '/img/radek-grzybowski-74331-unsplash.jpg';
 				}
 				echo '<div class="event">
-						<a href="'.get_permalink().'">
+						<a href="'.get_permalink().'/">
 						<img src="'.$thumbnail.'" alt="">
 						<div class="description">
 							<h4>'.get_the_title().'</h4>
-							<p>'.get_field('performance_date').'</p>
+							<p>&nbsp;</p>
 						</div>
 						</a>
 					</div>';
@@ -118,7 +118,7 @@
 					$thumbnail = get_template_directory_uri() . '/img/radek-grzybowski-74331-unsplash.jpg';
 				}
 				echo '<div class="event">
-						<a href="'.get_permalink().'">
+						<a href="'.get_permalink().'?view=list">
 						<img src="'.$thumbnail.'" alt="">
 						<div class="description">
 							<h4>'.get_the_title().'</h4>
