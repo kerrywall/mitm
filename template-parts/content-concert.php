@@ -11,18 +11,31 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="clearfix">
 
+	<?php $view = $_GET["view"]; ?>
+
 	<section class="entry-content">
+
+
+		<?php if ( $view !== "list" || get_field('free') == true) : ?>
 		<?php the_content(); ?>
-		<?php 				
+		<?php endif; ?>		
+
+		<?php
 
 		$series = get_the_category()[0]->cat_name;
 
-		if ($series == "Main Series" || $series == "Summer Music Vancouver") {
+		if (get_field('free') == false) {
+
 
 			echo '<div class="tickets"><h2>Single Tickets</h2>';
 
-			echo '<p><strong>Main Concert Series & Summer Music Vancouver</strong><br>
+
+		if ($series == "Main Series") {
+
+			echo '<p><strong>Main Concert Series</strong><br>
 $42 Adults  •  $38 Seniors</p>';
+
+}
 
 			echo '<p>To buy tickets by phone, please call the box office at 604.873.4612.</p>';
 
@@ -48,10 +61,14 @@ $42 Adults  •  $38 Seniors</p>';
 
 				}
 
+				
+
 				 ?>
 	</section><!-- .entry-content -->
 
 	<aside class="entry-sidebar">
+
+		<?php if ( $view !== "list" ) : ?>
 
 		<?php 
 			// check if the repeater field has rows of data
@@ -85,6 +102,8 @@ $42 Adults  •  $38 Seniors</p>';
 
 			endif;
 
+		endif;
+
 
 
 			if ($series == "Main Series") {
@@ -98,6 +117,9 @@ $42 Adults  •  $38 Seniors</p>';
 				echo '<h3>Fridays</h3>
 				<p><strong>Christ Church Cathedral</strong><br>
 				Coffee 10am – Concert 10:30am</p>';
+			} elseif ($series == "Summer Music Vancouver" && get_field('free') == false) {
+				echo '<h2>Concert Schedule</h2>';
+				echo '<p>' . get_field('location') . '</p>';
 			}
 			
 		?>
