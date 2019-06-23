@@ -39,12 +39,23 @@
 		
 		<?php
 		the_content();
+		?><?php if (is_page('noon-with-june')) { 
+			if( have_rows('events') ):
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'musicinthemorning' ),
-			'after'  => '</div>',
-		) );
-		?><?php if (is_page('noon-with-june')) { ?></div><?php }?>
+			 	// loop through the rows of data
+			    while ( have_rows('events') ) : the_row();
+
+			    	$event = get_sub_field('event')->post_title;
+			    	$date = get_sub_field('date');
+			    	$link = get_sub_field('event')->guid;
+
+			   ?><p><a href="<?php echo $link ?>"><?php echo $event ?></a><br><?php echo $date ?></p><?
+
+			    endwhile;
+
+
+			endif;
+		?></div><?php }?>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-<?php the_ID(); ?> -->
