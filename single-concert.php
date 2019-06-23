@@ -10,6 +10,7 @@
 get_header();
 ?>
 
+
 	<div id="primary" class="content-area">
 		<?php if (has_post_thumbnail()) : ?>
 			<div class="hero-image">
