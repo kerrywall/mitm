@@ -713,9 +713,14 @@ input.search-submit:hover, -webkit-input.search-submit:hover {
 .search-results .entry-header {
   margin-top: 0; }
 
-@media only screen and (min-width: 1024px) {
-  .page-id-75 .site-content, .page-id-3 .site-content {
-    margin-top: 100px; } }
+.page-id-75 .site-content, .page-id-3 .site-content {
+  padding: 0 20px;
+  text-align: center; }
+  @media only screen and (min-width: 1024px) {
+    .page-id-75 .site-content, .page-id-3 .site-content {
+      margin-top: 100px;
+      padding: 0;
+      text-align: left; } }
 
 .page-id-75 h2, .page-id-3 h2 {
   margin-top: 50px;
@@ -958,7 +963,7 @@ a {
     font-size: 0.9rem;
     text-transform: uppercase;
     list-style-type: none;
-    margin: 0 15px;
+    margin: 0 9px;
     height: 35px; }
     .main-navigation li.current_page_item > a {
       font-weight: bold; }
