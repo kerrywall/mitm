@@ -719,8 +719,7 @@ input.search-submit:hover, -webkit-input.search-submit:hover {
   @media only screen and (min-width: 1024px) {
     .page-id-75 .site-content, .page-id-3 .site-content {
       margin-top: 100px;
-      padding: 0;
-      text-align: left; } }
+      padding: 0; } }
 
 .page-id-75 h2, .page-id-3 h2 {
   margin-top: 50px;
@@ -729,16 +728,18 @@ input.search-submit:hover, -webkit-input.search-submit:hover {
 .page-id-75 .sponsor, .page-id-3 .sponsor {
   display: inline-block;
   float: left;
-  width: 50%;
+  width: 100%;
   padding-left: 1.04167%;
-  padding-right: 1.04167%; }
+  padding-right: 1.04167%;
+  float: none; }
   @media only screen and (min-width: 1024px) {
     .page-id-75 .sponsor, .page-id-3 .sponsor {
       display: inline-block;
       float: left;
       width: 25%;
       padding-left: 1.04167%;
-      padding-right: 1.04167%; } }
+      padding-right: 1.04167%;
+      float: none; } }
 
 .page-id-75 .main-sponsor, .page-id-3 .main-sponsor {
   display: inline-block;
@@ -1207,7 +1208,7 @@ a {
 
 @media only screen and (min-width: 1024px) {
   .concerts .event {
-    min-height: 340px; } }
+    min-height: 400px; } }
 
 .concerts .sidebar {
   display: none; }

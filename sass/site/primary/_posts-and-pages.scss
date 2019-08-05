@@ -77,7 +77,6 @@ input.search-submit:hover, -webkit-input.search-submit:hover {
 		@include min-screen(1024px) {
 			margin-top: 100px;
 			padding: 0;
-			text-align: left;
 		}
 	}
 	h2 {
@@ -86,9 +85,11 @@ input.search-submit:hover, -webkit-input.search-submit:hover {
 	}
 
 	.sponsor {
-		@include column(6);
+		@include column(12);
+		float: none;
 		@include min-screen(1024px) {
 			@include column(3);
+			float: none;
 		}
 	}
 	.main-sponsor {

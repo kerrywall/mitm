@@ -10,6 +10,10 @@
 get_header();
 ?>
 
+<script>
+  fbq('track', 'ViewContent');
+</script>
+
 
 	<div id="primary" class="content-area">
 		<?php if (has_post_thumbnail()) : ?>
