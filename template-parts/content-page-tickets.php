@@ -26,7 +26,7 @@
 		<?php }
 
 		$args = array(
-			'post_type' => 'concert' , 'meta_key'=> 'sort_date', 'orderby'	=> 'meta_value_num', 'order' => 'ASC', 'category_name' => 'summer-music-vancouver'
+			'post_type' => 'concert' , 'meta_key'=> 'sort_date', 'orderby'	=> 'meta_value_num', 'order' => 'ASC', 'category_name' => 'summer-music-vancouver', 'tag__not_in' => array( 19 )
 		);
 
 		// The Query
